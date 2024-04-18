@@ -5,6 +5,8 @@ public abstract class Animal {
     protected int age;
     protected String color;
 
+    public abstract void voice();
+
     @Override
     public String toString() {
         return "Animal{" +
@@ -43,8 +45,7 @@ public abstract class Animal {
         this.age = age;
         this.color = color;
     }
-    public void speak(){
-        System.out.println("some sound");
-    }
 
+
+    //public abstract double swim();
 }
