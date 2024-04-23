@@ -3,17 +3,17 @@ package gb3.fruits;
 import java.util.Arrays;
 
 public abstract class Fruit {
-    public float getWeight() {
-        return weight;
+    public Fruit(double totalWeight) {
+        this.totalWeight = totalWeight;
     }
 
-    public void setWeight(float weight) {
-        this.weight = weight;
+    public double getTotalWeight() {
+        return totalWeight;
     }
 
-    public Fruit(float weight) {
-        this.weight = weight;
+    public void setTotalWeight(double totalWeight) {
+        this.totalWeight = totalWeight;
     }
 
-    private float weight;
+    private double totalWeight;
 }
