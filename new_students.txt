@@ -1,0 +1,4 @@
+6; Ivan; iv@ya.ru
+5; Olya; ol@ya.ru
+3; Genna; gen@ya.ru
+9; Vasya; vas@ya.ru

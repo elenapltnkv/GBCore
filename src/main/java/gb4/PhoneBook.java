@@ -36,7 +36,7 @@ public class PhoneBook {
         book.addPhones("79916614925", "Surikov");
         book.addPhones("79916614926", "Petrov");
 
-        System.out.println(book.getPhones("Ivanov"));
+        System.out.println(book.getPhones("Petrov"));
 
     }
 }
