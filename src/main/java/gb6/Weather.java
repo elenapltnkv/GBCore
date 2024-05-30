@@ -28,3 +28,4 @@ public class Weather {
         System.out.println(weatherResult);
     }
 }
+//https://yandex.ru/pogoda/b2b/console/api-page
