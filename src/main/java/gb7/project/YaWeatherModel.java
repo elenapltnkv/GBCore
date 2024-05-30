@@ -43,7 +43,7 @@ public class YaWeatherModel {
                     .build();
             Response response = okHttpClient.newCall(request).execute();
             String responseBody = response.body().string();
-            String weatherCityText = objectMapper.readTree(responseBody).at("/info").at("/tzinfo").at("/name").asText();
+            String weatherCityText = objectMapper.readTree(responseBody).at("/info/tzinfo/name").asText();
             String weatherTempText = objectMapper.readTree(responseBody).at("/fact").at("/temp").asText();
             String weatherFeelLikeText = objectMapper.readTree(responseBody).at("/fact").at("/feels_like").asText();
             System.out.println("Сегодня погода в "+weatherCityText+ " "+ "+"+weatherTempText+". Ощущается как " + weatherFeelLikeText+" градусов.");
