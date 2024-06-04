@@ -25,7 +25,7 @@ public class YaWeatherModel {
     static OkHttpClient okHttpClient = new OkHttpClient();
     static ObjectMapper objectMapper = new ObjectMapper();
 
-    public static void getCity(String lat, String lon, Period period) throws IOException {
+    public void getCity(String lat, String lon, Period period) throws IOException {
         if (period == Period.NOW) {
             HttpUrl url = new HttpUrl.Builder()
                     .scheme(PROTOCOL)
@@ -97,7 +97,7 @@ public class YaWeatherModel {
         }
     }
 
-    public static void main(String[] args) throws IOException {
+    public  void main(String[] args) throws IOException {
         weatherByPoint(latMoscow, lonMoscow, Period.NOW);
         getCity(latMoscow, lonMoscow, Period.NOW);
 
