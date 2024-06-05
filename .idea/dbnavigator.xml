@@ -17,18 +17,25 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="05ced8ec-fd94-469f-9a17-7ea80e60ce64">
-      <console name="Connection" type="STANDARD" schema="students" session="Main"><![CDATA[--update students set name= 'Nataliya' where name = 'Natly'"
+      <console name="Connection" type="STANDARD" schema="weather" session="Main"><![CDATA[--update students set name= 'Nataliya' where name = 'Natly'"
 --select * from students;
 select * from faculties;
 select * from students where name= 'Bella';
-select * from students;]]></console>
+select * from students;
+--location, weatherText, degrees
+create schema weather;
+create table weather(id serial primary key, location varchar(300), weather_text varchar(200), degrees integer);
+select * from weather;
+insert into weather(location, weather_text, degrees) values ('Moscow', 'cloudy', 22);]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="05ced8ec-fd94-469f-9a17-7ea80e60ce64" object-ref="consoles/Connection" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="05ced8ec-fd94-469f-9a17-7ea80e60ce64" />
